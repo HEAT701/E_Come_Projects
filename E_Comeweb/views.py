@@ -5,7 +5,7 @@ from django.shortcuts import render
 def vews_product(request):
     products = Product.objects.all()
     print(products)
-    return render(request, 'index.html', {'products': products})
+    return render(request,'Home.html', {'products': products})
 
 def add_product(request):
     if request.method == 'POST':
